@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-/*        System.out.println("\n--------------------Exercício 1--------------------");
+        System.out.println("\n--------------------Exercício 1--------------------");
         Pessoa pessoa = new Pessoa("Isadora", 23, "Brasil");
         System.out.println(pessoa.toString());
         pessoa.setPais("Alemanha");
@@ -64,9 +64,29 @@ public class App {
         e2.setEmployeeSalary(1000);
         e2.setEmployeeSalary(1600);
 
-        e2.exibirInfo();*/
+        e2.exibirInfo();
 
         System.out.println("\n--------------------Exercício 5--------------------");
+        Circle circle = new Circle(5);
+        System.out.println("Raio: "+circle.getRadius());
+        System.out.println("Área: "+circle.calculaArea());
+        System.out.println("Perímetro: "+circle.calculaPerimeter());
+        Circle circle2 = new Circle(3);
+        System.out.println("Raio: "+circle2.getRadius());
+        circle.comparaTamanho(circle2);
+        circle.redimensionaRaio(2);
+        System.out.println("Novo raio: " + circle.getRadius());
+
+        System.out.println("\n--------------------Exercício 6--------------------");
+        Carro carro = new Carro("Fiat", "Sedans", 2020);
+
+        System.out.println("Eficiêcia do Combustível: "+ carro.eficienciaCombustivel(500, 40));
+        carro.setLimiteMaximoVelocidade(30);
+        System.out.println(carro.getLimiteMaximoValocidade());
+        carro.drive(800);
+        System.out.println("Quilometragem: "+carro.getQuilometragem());
+        carro.drive(200);
+        System.out.println("Quilometragem: "+carro.getQuilometragem());
 
         sc.close();
     }

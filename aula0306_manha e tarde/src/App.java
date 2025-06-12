@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("\n--------------------Exercício 1--------------------");
+        System.out.println("--------------------Exercício 1--------------------");
         
 
     }
