@@ -35,6 +35,7 @@ public class Student {
         }
         this.student_name = student_name;
     }
+    
     /*
     public ArrayList<String> getGrades() {
         return this.grades;
