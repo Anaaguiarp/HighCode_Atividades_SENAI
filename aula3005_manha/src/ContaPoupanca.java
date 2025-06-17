@@ -13,4 +13,14 @@ public class ContaPoupanca extends Conta {
     public void setTaxaJuros(double taxaJuros) {
         this.taxaJuros = taxaJuros;
     }
+
+    public void aplicarJuros(){
+        double juros = getSaldo() * (taxaJuros / 100);
+        setSaldo(getSaldo() + juros);
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "Taxa de Juros: " + this.taxaJuros + "%";
+    }
 }

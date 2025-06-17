@@ -2,8 +2,6 @@ public class Veiculo {
     private String nome;
     private int ano;
 
-
-
     public Veiculo(String nome, int ano){
         this.nome = nome;
         this.ano = ano;
@@ -21,4 +19,12 @@ public class Veiculo {
     public void setAno(int ano) {
         this.ano = ano;
     }
+
+    @Override
+    public String toString(){
+        return "Nome: " + this.nome + 
+               ", Ano: " + this.ano + "\n";
+    }
+    
 }
+

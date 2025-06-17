@@ -20,5 +20,30 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    
+    @Override
+    public boolean equals(Object obj) {
+
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Pessoa outra = (Pessoa) obj;
+
+        if (nome == null) {
+            if (outra.nome != null)
+                return false;
+        } else if (!nome.equals(outra.nome))
+            return false;
+
+        return idade == outra.idade;
+    }
+
+    public String toString(){
+        return "Nome: " + this.nome + 
+                "Idade: " + this.idade;
+    }
 }

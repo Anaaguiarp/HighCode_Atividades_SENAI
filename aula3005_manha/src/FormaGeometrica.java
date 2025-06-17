@@ -23,5 +23,10 @@ public abstract class FormaGeometrica {
         this.largura = largura;
     }
 
-    public abstract void calcularArea();
+    public abstract double calcularArea();
+
+    @Override
+    public String toString(){
+        return "Altura: " + this.altura + ", Largura: " + this.largura;
+    }
 }

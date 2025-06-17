@@ -13,4 +13,10 @@ public class Moto extends Veiculo {
     public void setTipoMotor(String tipoMotor) {
         this.tipoMotor = tipoMotor;
     }
+
+    public String toString() {
+        return super.toString() + "Tipo do Motor: " + this.tipoMotor;
+    }
+
+    
 }

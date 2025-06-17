@@ -13,4 +13,8 @@ public class Estudante extends Pessoa {
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
+
+    public String toString(){
+        return super.toString() + "Matrícula: " + this.matricula;
+    }
 }

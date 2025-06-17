@@ -13,4 +13,11 @@ public class Carro extends Veiculo {
     public void setNumPortas(int numPortas) {
         this.numPortas = numPortas;
     }
+
+    @Override
+    public String toString(){
+        return super.toString() + 
+               "Carro: " + getNome() + 
+               ", Número de Portas: " + this.numPortas;
+    }
 }

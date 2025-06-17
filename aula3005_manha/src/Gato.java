@@ -1,5 +1,6 @@
 public class Gato extends Animal{
-    public void fazerSom(){
+    @Override
+    public void emitirSom(){
         System.out.println("miau... o: o: o:");
     }
 

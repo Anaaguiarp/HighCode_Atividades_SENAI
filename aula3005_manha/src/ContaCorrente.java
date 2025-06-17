@@ -13,4 +13,17 @@ public class ContaCorrente extends Conta{
     public void setLimite(double limite) {
         this.limite = limite;
     }
+
+    public boolean sacar(double valor){
+        if(valor > 0 && (getSaldo() + limite) >= valor){
+            setSaldo(getSaldo() - valor);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "Limite: R$ " + String.format("%.2f", this.limite);
+    }
 }
