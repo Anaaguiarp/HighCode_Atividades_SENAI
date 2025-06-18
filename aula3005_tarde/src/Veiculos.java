@@ -95,7 +95,7 @@ class Motocicleta extends Veiculo {
     }
 }
 
-public class TesteVeiculos {
+public class Veiculos {
     public static void main(String[] args) {
         Caminhao caminhao = new Caminhao("Volvo", "FH16", 2020, "Diesel", 15000);
         Carro carro = new Carro("Toyota", "Corolla", 2019, "Gasolina");
