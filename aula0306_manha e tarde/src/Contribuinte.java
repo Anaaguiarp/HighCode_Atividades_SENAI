@@ -21,9 +21,11 @@ public abstract class Contribuinte {
     public void setRendaAnual(double rendaAnual) {
         this.rendaAnual = rendaAnual;
     }
-/*
-    public abstract void calcularImposto(double imposto){
 
+    public abstract double calcularImposto();
+
+    public String toString(){
+        return this.nome + ": R$" + String.format("%.2f", calcularImposto());
     }
-*/
+
 }
